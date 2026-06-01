@@ -1,0 +1,19 @@
+column,dtype,role,description
+event_id,integer,Metadata,Unique event identifier; not used as model feature.
+event_timestamp,datetime,Metadata,Synthetic event timestamp; not counted among the 15 model features.
+user_role,categorical,Feature 1,"Hospital role of the accessing user; generated with Physician 28%, Nurse 26%, Admin 9%, Radiology 12%, LabTech 15%, Charge 10%."
+department,categorical,Feature 2,Hospital department associated with the access event.
+resource_type,categorical,Feature 3,Type of EHR resource accessed.
+access_method,categorical,Feature 4,Interface or method used to access the EHR.
+geo_region,categorical,Feature 5,Coarse synthetic network/geographic access origin.
+device_type,categorical,Feature 6,Device class used for access.
+auth_level,categorical,Feature 7,Authentication mode used for the access event.
+access_reason,categorical,Feature 8,Declared reason/purpose for EHR access.
+hour_of_day,integer,Feature 9,"Hour of event, 0-23, used to model diurnal access patterns."
+day_of_week,integer,Feature 10,"Day of week, 0=Monday to 6=Sunday."
+request_rate,float,Feature 11,Synthetic user/session request intensity.
+failed_attempts,integer,Feature 12,Count of recent failed authentication/access attempts.
+ip_signature_hash,integer,Feature 13,Synthetic hashed IP/signature bucket; not a real IP address.
+response_time_ms,float,Feature 14,Synthetic system response time in milliseconds.
+data_volume_kb,float,Feature 15,Synthetic transferred data volume in kilobytes.
+is_anomaly,integer,Label,"Binary anomaly label; 1=anomalous/high-risk, 0=normal. Exactly balanced at 50% for training signal."

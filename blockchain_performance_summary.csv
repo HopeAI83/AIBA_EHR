@@ -1,0 +1,11 @@
+metric,AIBA-EHR,Fixed Block,Adaptive Block,PoW,Round Robin,FIFO
+Average TPS,209.7,9.7,19.3,66.6,41.0,48.7
+Peak TPS,221.0,100.0,200.0,2000.0,228.6,50.0
+TPS Stability (SD),34.7,29.6,58.8,338.3,82.9,8.1
+Latency Mean (s),25.7,16.5,15.6,12.8,12.2,770.2
+Latency P95 (s),33.3,129.0,134.4,0.0,65.1,1279.7
+Latency P99 (s),36.3,252.3,202.3,310.8,80.9,1330.0
+Orphan Rate,0.027,0.003,0.01,0.01,0.0,0.0
+Mempool Size Avg,5285.2,16678.8,2327.2,15158.8,415.1,23961.7
+SLO Compliance,1.0,1.0,1.0,0.99,1.0,0.267
+Efficiency,0.04,0.001,0.008,0.004,0.099,0.002

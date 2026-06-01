@@ -1,0 +1,4 @@
+protocol,average_tps,peak_tps,mean_latency_s,slo_compliance
+PBFT,145.2,280.0,44.1,0.97
+PoS,178.4,350.0,28.9,0.99
+AIBA-EHR,209.7,221.0,25.7,1.0

@@ -1,0 +1,7 @@
+term,sign,value,rationale
+w_tps,positive,0.4,Primary optimization target
+w_latency,negative,0.3,Clinical timeliness requirement
+w_mempool,negative,0.1,Queue stability
+w_orphan,negative,0.15,Chain fork prevention
+w_difficulty,negative,0.05,Avoids policy oscillation
+w_risk,negative,0.1,Security-aware consensus

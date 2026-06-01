@@ -1,0 +1,17 @@
+parameter,value
+dilation_rates,"{1,2,4,8}"
+kernel_size,3
+filters_per_layer,64
+receptive_field,31 time steps
+attention_heads,4
+attention_dim,64
+dropout_rate,0.2
+sequence_length,20
+batch_size,256
+optimizer,Adam beta1=0.9 beta2=0.999
+learning_rate,1e-3 cosine decay
+training_epochs,50
+loss_function,Binary cross-entropy with class weights
+validation_split,20% temporal hold-out
+cross_validation,5-fold stratified
+random_seed,42

@@ -1,0 +1,4 @@
+attack_type,attack_mechanism,aiba_ehr_defence,observed_impact
+Sybil Attack,Adversary creates multiple fake identities to gain voting weight,Risk score rho_n by TCN+AM; high-risk nodes receive voting weight <=0.3,Block acceptance rate unchanged at 99.7%
+Collusion Attack,Subset of nodes coordinate to approve malicious blocks,Threshold tau_w=0.67 requires broad honest majority; PPO adjusts difficulty under suspicious congestion,Collusion success rate <1.2% for coalitions <= f nodes
+Replay Attack,Adversary replays old valid transactions to double-spend,SHA-256 hash chaining; timestamped transactions; duplicate detection in mempool,"Zero successful replay attacks in 120,000-event simulation"

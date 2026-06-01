@@ -1,0 +1,7 @@
+model,params,train_time,inference_complexity,gpu_required
+AIBA-EHR (TCN+AM),~85K,~25 min,O(L*k*d_sigma*T*C),No
+CNN baseline,~1.2M,~8 min,O(k^2*C*T),No
+VGG-16,138.4M,~210 min,O(K^2*C_img*H*W),Yes
+VAE,~2.1M,~12 min,O(d_z*T),No
+LSTM+Transformer,~8.7M,~35 min,O(T^2*d_h),Optional
+IFSVM-EHR,sparse SV,N/A,O(n_sv*T),No
